@@ -34,12 +34,12 @@
 // best solution :
 // le call BACK de la fonction fais office de boucle
 
-String.prototype.toJadenCase = function () { 
-    return this.split(" ").map(function(word){
-        console.log("test");
-        return word.charAt(0).toUpperCase() + word.slice(1);
-    }).join(" ");
-}
+// String.prototype.toJadenCase = function () { 
+//     return this.split(" ").map(function(word){
+//         console.log("test");
+//         return word.charAt(0).toUpperCase() + word.slice(1);
+//     }).join(" ");
+// }
 
 
 console.log("How can mirrors be real if our eyes aren't real".toJadenCase());
