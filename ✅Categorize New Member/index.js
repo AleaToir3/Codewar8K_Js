@@ -11,10 +11,10 @@
 // Output will consist of a list of string values (in Haskell and C: Open or Senior) stating whether the respective member is to be placed in the senior or open category.
 
 // Example
-// input =  [[18, 20], [45, 2], [61, 12], [37, 6], [21, 21], [78, 9]]
+ data =  [[18, 20], [45, 2], [61, 12], [37, 6], [21, 21], [78, 9]]
 // output = ["Open", "Open", "Senior", "Open", "Open", "Senior"]
-let data = [[32,18],[87,7],[36,23],[37,7],[14,20]]
-// function openOrSenior(data){
+// let data = [[32,18],[87,7],[36,23],[37,7],[14,20]]
+// function openOrSenior(data){ 
 // let newstr= []
 //     data.forEach(element => {
 //         parseInt(element)
@@ -23,8 +23,19 @@ let data = [[32,18],[87,7],[36,23],[37,7],[14,20]]
 //     return newstr
 // }
 // console.log(openOrSenior(data))
-function test (data){
-    data.map(console.log(e) )
+
+//+55 et handicape +7
+//
+function test (datas){
+    newstr = []
+    datas.map((element)=>{
+        if(element[0] >= 55 && element[1] >= 7) newstr.push("Senior")
+        else newstr.push("Open")
+    })
+    return newstr
 }
 
+console.log(
 test(data)
+
+);
